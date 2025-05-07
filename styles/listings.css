@@ -1,0 +1,336 @@
+/* CONTENTS
+1. Global
+2. Layout
+3. Header
+4. Main Content
+
+/*--------------------------------------------------------------
+# 1. Global
+--------------------------------------------------------------*/
+
+/* Global Fonts */
+@font-face {
+    font-family: "NunitoReg";
+    src: url("../fonts/Nunito-Regular.woff") format("woff"),
+      url("../fonts/Nunito-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Karla";
+    src: url("../fonts/Karla-Regular.woff") format("woff"),
+      url("../fonts/Karla-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "Kantumruy";
+    src: url("../fonts/Kantumruy-Regular.woff") format("woff"),
+      url("../fonts/Kantumruy-Regular.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+  }
+
+/* Fonts (Called for Page) */ 
+:root {
+    --default-font: "Karla", "Helvetica Neue", -apple-system, "Segoe UI", Roboto,
+     Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --heading-font: "Kantumruy", sans-serif;
+    --paragraph-font: "Karla", sans-serif;
+    --logo-font: "Orbitron", sans-serif;
+}
+  
+/* Global Colors */
+:root {
+    --background-color: #000000;
+    --primary-color: #ffffff;
+    --secondary-color: #5c5c5c;
+    --primary-font-color: #000000;
+    --primary-font-color-alt: #ffffff;
+    --hover-color: #d1d1d1;
+    --hover-color-alt: #9edaff;
+    --secondary-font-color: #202020;
+    --shadow-color: #1313132c;
+    --link-color: #00e5ff;
+    --border-color: #000000;
+  }
+ 
+/* Global Behaviours */
+:root {
+    scroll-behavior: smooth;
+  }
+
+/*--------------------------------------------------------------
+# 2. Layout
+--------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
+  
+  body {
+    background-position: center;
+    font-family: var(--paragraph-font);  
+    background-color: var(--background-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+  }
+
+  a,
+  h1,
+  h2,
+  h3,
+  p {
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--primary-font-color);
+    font-family: var(--default-font);
+  }
+  
+  h1 {
+    font-family: var(--heading-font);
+    line-height: 1.2;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  button {
+    background-color: var(--background-color);
+    color: var(--primary-font-color-alt);
+    border: 1px solid var(--border-color);
+    padding: 12px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: var(--default-font);
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+/*--------------------------------------------------------------
+# 3. Header
+--------------------------------------------------------------*/
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 60px;
+    border-radius: 20px;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+.nav-bar li {
+    display: flex;
+    text-align: center;
+  }
+
+.nav-bar a {
+    color: var(--primary-font-color-alt);
+  }
+
+.header-logo {
+    font-family: var(--logo-font);
+    font-size: 30px;
+    color: var(--primary-font-color-alt);
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 0 20px;
+  }
+
+  .header-buttons button {
+    border: 2px solid var(--primary-font-color-alt);
+    background-color: transparent;
+    color: var(--primary-color);
+  }
+
+/*--------------------------------------------------------------
+# 3. Main Content
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# 3.1. Title Container
+--------------------------------------------------------------*/
+
+  .listing-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding: 0px 30px 30px 30px;
+  }
+
+  .listing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    background-color: var(--primary-color);
+    width: 100%;
+  }
+
+
+  .listing-title {
+    color: var(--primary-font-color);
+    font-size: 3vh;
+    padding: 20px;
+  }
+
+  .listing-contents img {
+    width: 50%;
+    padding: 0 20px;
+  }
+
+  .listing-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: var(--primary-font-color);
+    font-size: 20px;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 20px;
+  }
+
+  .listing-header h2 {
+    color: var(--primary-font-color);
+    font-size: 2.5vh;
+    padding: 0px;
+  }
+
+  .listing-header p {
+    color: var(--primary-font-color);
+    font-size: 2.5vh;
+  }
+
+  .listing-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 0px 20px 20px;
+  }
+
+  .listing-info img {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+    margin: 20px;
+}
+
+  .listing-info h3 {
+    color: var(--primary-font-color);
+    font-size: 2.5vh;
+    padding-bottom: 10px;
+  }
+
+  .listing-info div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .listing-beds {
+    border-top: 2px solid var(--shadow-color); 
+  }
+
+  .listing-sqft {
+    border-bottom: 2px solid var(--shadow-color); 
+  }
+
+  .listing-info p {
+    color: var(--primary-font-color);
+    font-size: 2vh;
+    padding: 10px 0;
+}
+
+/*--------------------------------------------------------------
+# 3.2. Listing Details
+--------------------------------------------------------------*/
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 100%;
+    padding: 30px;
+    padding-top: 0px;
+  }
+
+  .details-container h2 {
+    color: var(--primary-font-color);
+    font-size: 2.5vh;
+    padding: 20px 0;
+  }
+
+  .amenities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .amenities p {
+    color: var(--primary-font-color);
+    font-size: 2vh;
+    text-align: center;
+  }
+
+
+/*--------------------------------------------------------------
+# 4. Footer
+--------------------------------------------------------------*/
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--primary-color);
+    background-color: var(--shadow-color);
+    text-align: center;
+    padding: 20px;
+  }
+    
