@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="styles/listings.css"> 
     </head>
     <body>
+
         <!-- Header -->
         <header>
             <div class="header-container">
@@ -23,14 +24,15 @@
                     <button class="login-btn">Get Started</button>
                 </div>
         </header>
+
         <!-- Main Content -->
         <main>
+
             <!-- Title Container -->
             <section class="listing-container">
-                <h2 class="listing-title">House Name Apartments</h2>
                 <div class="listing-contents">
-                    <img src="https://placehold.co/600x400" alt="Property" />
                     <div class="listing-description">
+                        <h2 class="listing-title">House Name Apartments</h2>
                         <div class="listing-header">
                             <h2>Located in <span>Nairobi, Es</span></h2>
                             <p>Monthly Rent: <span class="price">$250,000</span></p>
@@ -50,13 +52,72 @@
                             </div>
                         </div>
                     </div>
-                </div>          
-                
+
+                </div> 
             </section>
+
+            <!-- Title Container -->
             <section class="details-container">
-                <h2>About this listing</h2>
-                <div class="amenities">
-                    <p>Whether you're alone or with your family will appreciate the quick and easy access from this home in the center of everything.</p>
+                <div class="agent-card">
+                    <div class="agent-content">
+                        <img src="https://placehold.co/100" alt="Agent">
+                        <p>Listed by <strong>Jane Doe</strong></p>
+                    </div>
+                    <a >
+                        <Button>Book</Button>
+                    </a>
+                </div>  
+                <!-- House Details -->
+                <div class="about-container">
+                    <h2>About this listing</h2>
+                    <div class="amenities">
+                        <p>Whether you're alone or with your family will appreciate the quick and easy access from this home in the center of everything.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Image Gallery -->
+            <section class="gallery-container">
+                <h2>Image Gallery</h2>
+                <div class="image-grid">
+                  <img src="https://placehold.co/300x200" alt="Living Room" />
+                  <img src="https://placehold.co/300x200" alt="Kitchen" />
+                  <img src="https://placehold.co/300x200" alt="Bedroom" />
+                  <img src="https://placehold.co/300x200" alt="Backyard" />
+                </div>
+            </section>
+
+            <!-- Other Listings -->
+            <section class="others-container" id="listings">
+                <h2>Featured Listings</h2>
+                <div class="property-list">
+                    <div class="property-card">
+                        <img src="https://placehold.co/600x400" alt="Property" />
+                        <div class="property-info">
+                            <div class="property-header">
+                                <h2>House Name Apartments</h2>
+                                <a href="listings.html"><button>More</button></a>
+                            </div>
+                            <h3>📍 Nairobi, Es</h3>
+                            <p>4 Bed · 3 Bath · 2500 sqft</p>
+                            <p>Amenities: Pool, Garage, Garden</p>
+                            <p class="price">$250,000</p>
+                        </div>
+                    </div>
+                    <div class="property-card">
+                        <img src="https://placehold.co/600x400" alt="Property" />
+                        <div class="property-info">
+                            <div class="property-header">
+                                <h2>House Name Apartments</h2>
+                                
+                                <a href="listings.html"><button>More</button></a>
+                            </div>
+                            <h3>📍 Nairobi, Es</h3>
+                            <p>4 Bed · 3 Bath · 2500 sqft</p>
+                            <p>Amenities: Pool, Garage, Garden</p>
+                            <p class="price">$250,000</p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
