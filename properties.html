@@ -13,7 +13,7 @@
       <nav class="nav-bar">
         <ul>
           <li><a href="home.html">Home</a></li>
-          <li><a href="properties.html">Properties</a></li>
+          <li><a href="#">Listings</a></li>
           <li><a href="agents.html">Agents</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
@@ -24,26 +24,54 @@
     </div>
   </header>
   <main>
-    <section class="filter-section">
-      <h2>Find Your Property</h2>
-      <form class="filter-form">
-        <input type="text" placeholder="Location">
-        <input type="text" placeholder="Property Type">
-        <input type="number" placeholder="Min Price">
-        <input type="number" placeholder="Max Price">
-        <input type="number" placeholder="Bedrooms">
-        <input type="number" placeholder="Bathrooms">
-        <button type="submit">Search</button>
-      </form>
-    </section>
-    <section class="property-list">
-      <div class="property-card">
-        <img src="https://placehold.co/600x400" alt="Property">
-        <div class="property-info">
-          <h3>Modern Villa in Nairobi</h3>
-          <p>📍 Nairobi | 4 Bed | 3 Bath | $250,000</p>
-          <a href="listings.html"><button>View Details</button></a>
+    <!-- Search Section with Backdrop -->
+    <section class="search-section">
+      <div class="search-container">
+        <div class="search-header">
+          <p>Search for available properties</p>
+          <button type="submit">Search</button>
         </div>
+        <div class="search-contents">
+          <input type="text" placeholder="Location" />
+          <input type="text" placeholder="Property Type" />
+          <input type="text" placeholder="Min Price" />
+          <input type="text" placeholder="Max Price" />
+          <input type="text" placeholder="Bedrooms" />
+        </div>
+      </div>
+    </section>
+    
+    <!-- Property Listings -->
+    <section class="listings-container">
+      <h2>Available Properties</h2>
+      <div class="property-list">
+        <div class="property-card">
+          <img src="https://placehold.co/600x400" alt="Modern Villa">
+          <div class="property-info">
+            <div class="property-header">
+              <h2>Modern Villa in Nairobi</h2>
+              <button>View Details</button>
+            </div>
+            <p>📍 Nairobi | 4 Bed | 3 Bath</p>
+            <p>Amenities: Pool, Garage, Garden</p>
+            <p class="price">$250,000</p>
+          </div>
+        </div>
+        
+        <div class="property-card">
+          <img src="https://placehold.co/600x400" alt="Luxury Apartment">
+          <div class="property-info">
+            <div class="property-header">
+              <h2>Luxury Apartment in Mombasa</h2>
+              <button>View Details</button>
+            </div>
+            <p>📍 Mombasa | 3 Bed | 2 Bath</p>
+            <p>Amenities: Gym, Security, Balcony</p>
+            <p class="price">$180,000</p>
+          </div>
+        </div>
+        
+        <!-- Add more property cards as needed -->
       </div>
     </section>
   </main>

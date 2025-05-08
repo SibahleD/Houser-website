@@ -1,49 +1,165 @@
 @import url("listings.css");
 
-.filter-section, .property-list {
+main {
+  background: none;
+}
+
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/building-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* Search Section */
+.search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 100%;
-  padding: 30px;
+  padding: 100px 0 70px;
+
+}
+
+.search-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.95) 100%);
+  box-shadow: 0 10px 30px var(--shadow-color);
+  border-radius: 2px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
+  margin-top: -50px;
+  z-index: 10;
+}
+
+.search-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.search-header p {
+  color: var(--primary-font-color);
+  font-size: 20px;
+  letter-spacing: -0.8px;
+  margin: 0;
+}
+
+.search-header button {
+  border: 2px solid var(--primary-font-color);
+  background-color: transparent;
+  color: var(--primary-font-color);
+  padding: 10px 20px;
+}
+
+.search-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.search-contents input {
+  text-align: center;
+  width: calc(33.333% - 20px);
+  min-width: 200px;
+  padding: 12px 0;
+  border-radius: 2px;
+  border: 1px solid var(--hover-color);
+  margin: 5px;
   background-color: var(--primary-color);
 }
 
-.filter-section h2 {
-  text-align: center;
-  margin-bottom: 20px;
+/* Listings Section */
+.listings-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  background-color: var(--primary-color);
+  padding: 30px;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
+.listings-container h2 {
   color: var(--primary-font-color);
+  font-size: 30px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 90%;
 }
 
-.filter-form {
+.property-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
   justify-content: center;
-}
-
-.filter-form input,
-.filter-form button {
-  padding: 10px;
-  font-family: var(--default-font);
-}
-
-.property-card {
-  width: 300px;
-  margin: 20px;
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: var(--hover-color);
-  box-shadow: 0 2px 10px var(--shadow-color);
-}
-
-.property-card img {
+  gap: 30px;
+  padding-bottom: 50px;
   width: 100%;
-  height: auto;
+  max-width: 1200px;
 }
 
-.property-info {
-  padding: 15px;
+
+
+.property-header h2 {
+    display: flex;
+    align-items: center;
+    max-width: 210px;
+    font-size: 20px;
+    margin:0px;
+    padding: 0px;
+}
+.property-header p {
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--primary-font-color);
+    font-family: var(--default-font);
+}
+.property-card:hover {
+  transform: translateY(-5px);
 }
 
-.property-info h3,
-.property-info p {
-  margin: 10px 0;
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-section {
+    padding: 80px 20px 120px;
+  }
+  
+  .search-contents input {
+    width: calc(50% - 10px);
+  }
+  
+  .property-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-contents input {
+    width: 100%;
+  }
+  
+  .search-header {
+    flex-direction: column;
+    gap: 15px;
+  }
 }

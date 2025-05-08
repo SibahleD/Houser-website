@@ -186,7 +186,6 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: right;
-  align-items: right;
   text-align: right;
   margin: 20px;
   padding: 20px;
