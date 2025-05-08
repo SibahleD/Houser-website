@@ -226,7 +226,7 @@ main {
   text-align: center;
   width: 100%;
   padding: 50px;
-  background-color: var(--hover-color);
+  background-color: var(--primary-color);
 }
 
 .search-container {
@@ -234,7 +234,7 @@ main {
   justify-content: center;
   align-items: center;
   justify-items: center;
-  background-color: var(--primary-color);
+  background-color: rgb(241, 241, 241);
   box-shadow: 0 10px 10px var(--shadow-color);
   border-radius: 2px;
   width: 90%;
@@ -265,11 +265,13 @@ main {
 
 .search-container input {
   text-align: center;
-  width: 30%;
-  padding: 10px 0;
+  min-width: 200px;
+  padding: 12px 0;
   border-radius: 2px;
-  border: 1px solid var(--border-color);
-  margin: 10px 5px;
+  border: 1px solid var(--hover-color);
+  margin: 5px;
+  background-color: var(--primary-color);
+  
 }
 
 /*--------------------------------------------------------------
@@ -321,20 +323,18 @@ main {
 
 .property-info {
   width: 400px;
-  box-shadow: 0 10px 10px var(--shadow-color);
   background-color: var(--hover-color);
   padding: 20px;
+}
+
+.property-info h3 {
+  color: var(--primary-font-color);
 }
 
 .property-info p {
   color: var(--primary-font-color);
 }
 
-.property-header h2 {
-  font-size: 20px;
-  padding: 0px;
-  margin: 0px;
-}
 
 .property-header {
   display: flex;
@@ -348,6 +348,23 @@ main {
   color: var(--primary-font-color);
 }
 
+.property-header h2 {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+.property-card img {
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.property-card:hover .property-card img {
+  transform: scale(1.05);
+}
+.property-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
 
 /*--------------------------------------------------------------
 # 3.3. Agents Container

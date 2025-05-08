@@ -228,6 +228,7 @@ main {
   padding-bottom: 60px;
   padding-top: 0px;
   width: 100%;
+  align-items: center;
 }
 
 .features-container h2 {
@@ -241,6 +242,7 @@ main {
   color: var(--primary-font-color);
   padding: 30px;
   padding-top: 10px;
+  width: 70%;
 }
 
 .features-list {
@@ -249,6 +251,13 @@ main {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  width: 80%;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feature-card h3 {
@@ -271,7 +280,7 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: var(--primary-font-color);
+  background-color: rgb(241, 241, 241);
   padding: 30px;
   padding-bottom: 60px;
   width: 100%;
@@ -286,7 +295,7 @@ main {
 }
 
 .contact-container h2 {
-  color: var(--primary-font-color-alt);
+  color: var(--primary-font-color);
   font-size: 30px;
   padding: 10px;
   padding-bottom: 30px;
@@ -303,7 +312,7 @@ main {
   padding: 10px;
   margin: 10px;
   border-radius: 5px;
-  border: 2px solid var(--primary-font-color-alt);
+  border: 2px solid var(--primary-font-color);
   color: var(--primary-color);
 }
 

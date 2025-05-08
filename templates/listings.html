@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Houser - Homepage</title>
-        <link rel="stylesheet" href="styles/listings.css"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/listings.css') }}"> 
     </head>
     <body>
 
@@ -94,32 +94,35 @@
                 <h2>Featured Listings</h2>
                 <div class="property-list">
                     <div class="property-card">
-                        <img src="https://placehold.co/600x400" alt="Property" />
-                        <div class="property-info">
-                            <div class="property-header">
-                                <h2>House Name Apartments</h2>
-                                <a href="listings.html"><button>More</button></a>
+                        <a href="listings.html">
+                            <img src="https://placehold.co/600x400" alt="Property" />
+                            <div class="property-info">
+                                <div class="property-header">
+                                    <h2>House Name Apartments</h2>
+                                </div>
+                                <h3>📍 Nairobi, Es</h3>
+                                <p>4 Bed · 3 Bath · 2500 sqft</p>
+                                <p>Amenities: Pool, Garage, Garden</p>
+                                <p class="price">$250,000</p>
                             </div>
-                            <h3>📍 Nairobi, Es</h3>
-                            <p>4 Bed · 3 Bath · 2500 sqft</p>
-                            <p>Amenities: Pool, Garage, Garden</p>
-                            <p class="price">$250,000</p>
-                        </div>
+                        </a>
                     </div>
+                    
                     <div class="property-card">
-                        <img src="https://placehold.co/600x400" alt="Property" />
-                        <div class="property-info">
-                            <div class="property-header">
-                                <h2>House Name Apartments</h2>
-                                
-                                <a href="listings.html"><button>More</button></a>
+                        <a href="listings.html">
+                            <img src="https://placehold.co/600x400" alt="Property" />
+                            <div class="property-info">
+                                <div class="property-header">
+                                    <h2>House Name Apartments</h2>
+                                </div>
+                                <h3>📍 Nairobi, Es</h3>
+                                <p>4 Bed · 3 Bath · 2500 sqft</p>
+                                <p>Amenities: Pool, Garage, Garden</p>
+                                <p class="price">$250,000</p>
                             </div>
-                            <h3>📍 Nairobi, Es</h3>
-                            <p>4 Bed · 3 Bath · 2500 sqft</p>
-                            <p>Amenities: Pool, Garage, Garden</p>
-                            <p class="price">$250,000</p>
-                        </div>
+                        </a>
                     </div>
+
                 </div>
             </section>
         </main>

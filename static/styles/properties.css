@@ -29,7 +29,7 @@ body {
   justify-content: center;
   align-items: center;
   justify-items: center;
-  background: linear-gradient(90deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.95) 100%);
+  background-color: rgb(241, 241, 241);
   box-shadow: 0 10px 30px var(--shadow-color);
   border-radius: 2px;
   width: 90%;
@@ -128,9 +128,12 @@ body {
     color: var(--primary-font-color);
     font-family: var(--default-font);
 }
+
 .property-card:hover {
   transform: translateY(-5px);
+  box-shadow: 0 4px 12px var(--shadow-color);
 }
+
 
 .price {
   font-weight: bold;

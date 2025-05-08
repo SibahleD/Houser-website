@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agent Profile - Jane Doe</title>
-  <link rel="stylesheet" href="styles/agent-details.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/agent-details.css') }}">
 </head>
 <body>
   <header>
@@ -28,15 +28,17 @@
       <img src="https://placehold.co/300x250" alt="Jane Doe">
       <div class="profile-details">
         <h2>Jane Doe</h2>
-        <p><strong>Specialization:</strong> Residential Properties</p>
-        <p><strong>Email:</strong> jane@example.com</p>
-        <p><strong>Phone:</strong> +254 712 345678</p>
-        <p><strong>Experience:</strong> 10 years</p>
-        <p><strong>Location:</strong> Nairobi</p>
-        <span>15+ Years Experience</span>
-              <span>50+ Properties Sold</span>
       </div>
     </section>
+    <section class="agent-bio">
+      <h3>About Jane</h3>
+      <p><strong>Specialization:</strong> Residential Properties</p>
+      <p><strong>Email:</strong> jane@example.com</p>
+      <p><strong>Phone:</strong> +254 712 345678</p>
+      <p><strong>Experience:</strong> 10 years</p>
+      <p><strong>Location:</strong> Nairobi</p>
+      <span>15+ Years Experience</span>
+      <span>50+ Properties Sold</span>
   </main>
   <footer>
     <p>&copy; 2025 Houser. All rights reserved.</p>
