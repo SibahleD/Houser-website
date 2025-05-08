@@ -1,0 +1,49 @@
+@import url("listings.css");
+
+.filter-section, .property-list {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--primary-color);
+}
+
+.filter-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-font-color);
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filter-form input,
+.filter-form button {
+  padding: 10px;
+  font-family: var(--default-font);
+}
+
+.property-card {
+  width: 300px;
+  margin: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--hover-color);
+  box-shadow: 0 2px 10px var(--shadow-color);
+}
+
+.property-card img {
+  width: 100%;
+  height: auto;
+}
+
+.property-info {
+  padding: 15px;
+}
+
+.property-info h3,
+.property-info p {
+  margin: 10px 0;
+}

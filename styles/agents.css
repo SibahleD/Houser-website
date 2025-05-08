@@ -1,0 +1,46 @@
+@import url("listings.css");
+
+.agent-filter, .agents-list {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--primary-color);
+}
+
+.agent-filter h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-font-color);
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.agents-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.agent-card {
+  width: 300px;
+  background-color: var(--hover-color);
+  padding: 20px;
+  box-shadow: 0 5px 10px var(--shadow-color);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.agent-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.agent-info {
+  margin-top: 15px;
+}

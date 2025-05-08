@@ -360,6 +360,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: left;
+  width:100%;
   background-color: var(--primary-font-color);
   padding: 30px;
   padding-bottom: 60px;
