@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for
 from models import db, Property, Agent
+from flask import Flask, send_from_directory
+
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
@@ -7,11 +9,13 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db.init_app(app)
 
-# Create tables before first request
+@app.route('/static/<path:path>')
+def serve_static(path):
+    return send_from_directory('static', path)
+
 @app.before_first_request
 def create_tables():
     db.create_all()
-    # Add some sample data if the database is empty
     if not Agent.query.first():
         sample_agent = Agent(
             name="Jane Doe",
